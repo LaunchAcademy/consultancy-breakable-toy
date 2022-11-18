@@ -7,7 +7,12 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { TopBar } from "./layout/TopBar";
+import { SquidIndex } from "./squids/SquidIndex";
+
 import "../style/main.pcss";
+import "../style/squids/squids.pcss";
+import "../style/ui/buttons.pcss";
+import "../style/ui/navigation.pcss";
 
 const App = () => {
   /*
@@ -25,9 +30,8 @@ const App = () => {
       <Router>
         <TopBar />
         <Switch>
-          <Route exact path="/">
-            <h2>Hello from react</h2>
-          </Route>
+          <Route exact path="/" />
+          <Route exact path="/squids" component={SquidIndex} />
         </Switch>
       </Router>
       <ReactQueryDevtools initialIsOpen={false} />
