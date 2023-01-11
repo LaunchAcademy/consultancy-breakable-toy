@@ -60,7 +60,7 @@
     "express": "^4.17.2",
     "express-handlebars": "^6.0.2",
     "faker": "5.5.3",
-    "knex": "^0.95.15",
+    "knex": "^2.4.0",
     "morgan": "^1.10.0",
     "objection": "^3.0.0",
     "objection-unique": "^1.2.2",
